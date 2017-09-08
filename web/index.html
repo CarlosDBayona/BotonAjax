@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SO question 4112686</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function() {
+         $("#somebutton").click(function() {
+             servletCall();
+         });
+
+     });
+        function servletCall() {
+         $.post(
+             "NewServlet", 
+             {name : "Message from jsp"} //meaasge you want to send
+         )};
+    </script>
+</head>
+<body>
+
+    <button id="somebutton">press here</button>
+    <div id="somediv"> </div>
+</body>
